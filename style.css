@@ -1,51 +1,31 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
-
 
 html, body{
     width: 100%;
     height: 100%;
 }
 
+
 #main{
-
+    position: relative;
     display: flex;
-    width: 1440px;
-    height: 800px;
-    
-
-    
+    width: 100%;
+    height: 100vh;
 }
 
-.login{
+
+.left-side{
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 45%;
-    background-color: #4E5BEE;
+    background: #4E5BEE;
+    width: 40%;
+    z-index: 2;
     
-  
 }
-
-.form{
-    display: flex;
-    position: relative;
-
-}
-
-.icon1{
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    object-fit: cover;
-    top: 360px;
-    left: 160px;
-}
-
 
 .logo{
     position: absolute;
@@ -53,7 +33,18 @@ html, body{
     height: 69.79px;
     top: 229px;
     left: 212px;
+}
 
+.login{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+   
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -76,14 +67,16 @@ html, body{
 }
 
 .usuario::placeholder{
-    color: #fff;
+    color: white;
 }
-   
 
-.icon img{
+.icon1{
     position: absolute;
-    display: flex;
-    top: 410px;
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    top: 360px;
+    left: 160px;
 }
 
 .senha{
@@ -118,7 +111,7 @@ html, body{
     left: 160px;
 }
 
-.button{
+button{
     position:absolute;
     width: 300px;
     height: 50px;
@@ -135,10 +128,11 @@ p{
     color: white;
     text-align: center;
     position: absolute;
-    width: 144px;
+    width: 150px;
     height: 32px;
     top: 600px;
     left: 228px;
+    font-size: 14px;
 
 }
 
@@ -148,349 +142,133 @@ a{
     position: absolute;
     width: 144px;
     height: 32px;
-    top: 620px;
+    top: 640px;
     left: 228px;
+    font-size: 14px;
+}
 
+/*fim da seção esquerda*/
+
+/*Inicio da seção direita*/
+
+.right-side{
+    background-color: white;
+    width: 55%;
+    z-index: 0;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+   
+}
+
+.hero img{
+    position: absolute;
+    width: 1084.15px;
+    height: 700px;
+    top: 21px;
+    left: 440px;
 }
 
 
-a:hover{
-    font-weight: 600;
-    
+@media only screen and (max-width: 768px){
 
-}
-
-
-.team{
-    display: flex;
-    width: 50%;
-    
-}
-
-
-.team img{
-
-    width: 800px;
-    height: 750px;
-    object-fit: cover;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-/*responsivo para formato de tablet*/
-
-@media (max-width:768px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
 
     html, body{
         width: 100%;
+        height: 100%;
     }
 
-    #main{
-        flex-wrap: wrap;
-    }
 
-    .login{
-        position: relative;
+    .left-side{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 100%;
         height: 100vh;
-        background-color: #4E5BEE;
-        
-      
     }
 
-
-    .team{
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .team img{
-        width: 800px;
-        height: 750px;
-        justify-content: center;
-        align-items: center;
-        margin-right: 0px;
-        
-        
-    }
-
-    .icon1{
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        object-fit: cover;
-        top: 360px;
-        left: 43%;
-    }
-    
-    
-    .logo{
-        position: absolute;
-        width: 400px;
-        height: 200px;
-        top: 100px;
-        left: 38.5%;
-    
-    
-    }
-
-
-    
-    .usuario{
-        position: absolute;
-        width: 200px;
-        height: 50px;
-        top: 350px;
-        left: 42%;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        border-bottom: 2px solid #fff;
-        background: transparent;
-        cursor: pointer;
-        padding-left: 50px;
-        padding-right: 50px;
-        color: white;
-        outline: none;
-        text-align: left;
-        font-size: 12px;
-    }
-
-    .usuario::placeholder{
-        color: #fff;
-    }
-       
-    
-    .icon img{
-        position: absolute;
-        display: flex;
-        top: 410px;
-        left: 40%;
-    }
-    
-    .senha{
-        position: absolute;
-        width: 200px;
-        height: 50px;
-        top: 415px;
-        left: 42%;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        border-bottom: 2px solid #fff;
-        background: transparent;
-        cursor: pointer;
-        color: white;
-        outline: none;
-        padding-left: 50px;
-        padding-right: 50px;
-        text-align: left;
-        font-size: 12px;
-
-    }
-
-    .senha::placeholder{
-        color: #fff;
-    }
-    
-    .icon2{
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        object-fit: cover;
-        top: 425px;
-        left: 43%;
-    }
-    
-    .button{
-        position:absolute;
-        width: 300px;
-        height: 50px;
-        top: 480px;
-        left: 42%;
-        border-radius: 25px;
-        font-size: 20px;
-        font-weight: 600;
-        border: 1px solid black;
-    
-    
-    
-    }
-    
-    p{
-        color: white;
-        text-align: center;
-        position: absolute;
-        width: 144px;
-        height: 32px;
-        top: 570px;
-        left: 48%;
-    
-    }
-    
-    a{
-        color: white;
-        text-decoration: none;
-        text-align: center;
-        position: absolute;
-        width: 144px;
-        height: 32px;
-        top: 600px;
-        left: 48%
-    }
-
-}
-
-@media (max-width:480){
-
-    htm, body{
-        width: 100%;
-    }
-
-    
-    .login{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-        background-color: #4E5BEE;
-    }
-
-
-    .icon1{
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        object-fit: cover;
-        top: 360px;
-        left: 43%;
-    }
-    
-    
-    .logo{
-        position: absolute;
-        width: 400px;
-        height: 200px;
-        top: 100px;
-        left: 38.5%;
-    }
-    
-    .usuario{
-        position: absolute;
-        width: 200px;
-        height: 50px;
-        top: 350px;
-        left: 42%;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        border-bottom: 2px solid #fff;
-        background: transparent;
-        cursor: pointer;
-        padding-left: 50px;
-        padding-right: 50px;
-        color: white;
-        outline: none;
-        text-align: left;
-        font-size: 12px;
-    }
-
-    .usuario::placeholder{
-        color: #fff;
-    }
-       
-    
-    .icon img{
-        position: absolute;
-        display: flex;
-        top: 410px;
-        left: 40%;
-    }
-    
-    .senha{
-        position: absolute;
-        width: 200px;
-        height: 50px;
-        top: 415px;
-        left: 42%;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        border-bottom: 2px solid #fff;
-        background: transparent;
-        cursor: pointer;
-        color: white;
-        outline: none;
-        padding-left: 50px;
-        padding-right: 50px;
-        text-align: left;
-        font-size: 12px;
-
-    }
-
-    .senha::placeholder{
-        color: #fff;
-    }
-    
-    .icon2{
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        object-fit: cover;
-        top: 425px;
-        left: 43%;
-    }
-    
-    .button{
-        position:absolute;
-        width: 300px;
-        height: 50px;
-        top: 480px;
-        left: 42%;
-        border-radius: 25px;
-        font-size: 20px;
-        font-weight: 600;
-        border: 1px solid black;
-    
-    
-    
-    }
-    
-    p{
-        color: white;
-        text-align: center;
-        position: absolute;
-        width: 144px;
-        height: 32px;
-        top: 570px;
-        left: 48%;
-    
-    }
-    
-    a{
-        color: white;
-        text-decoration: none;
-        text-align: center;
-        position: absolute;
-        width: 144px;
-        height: 32px;
-        top: 600px;
-        left: 48%
-    }
-
-    .team{
+    .right-side{
         display: none;
     }
 
+    .hero{
+        display: none;
+    }
+
+    
 }
 
+@media only screen and (max-width: 480px){
 
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    html, body{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .left-side{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .logo{
+        position: absolute;
+        top: 229px;
+        left: 120px;
+    }
+
+    .usuario{
+        position: absolute;
+        top: 350px;
+        left: 55px;
+    }
+
+    .senha{
+        position: absolute;
+        top: 410px;
+        left: 55px;
+    }
+
+    .icon1{
+        position: absolute;
+        top: 360px;
+        left: 65px;
+    }
+
+    .icon2{
+        position: absolute;
+        top: 425px;
+        left: 65px;
+    }
+
+    button{
+        position: absolute;
+        top: 470px;
+        left: 55px;
+    }
+
+    .right-side{
+        display: none;
+    }
+
+    .hero{
+        display: none;
+    }
+
+    
+}

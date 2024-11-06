@@ -3,35 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grap - Pagina de login</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-    
+
+
     <div id="main">
-        <div class="login">
-
+        <div class="left-side">
             <img src="imagens/logo-grab.svg" alt="logo" class="logo">
-                <div id="form">
-                    <img src="imagens/perm_identity_24dp_E8EAED.png" alt="icon de login" class="icon1">
-                    <img src="imagens/lock_open_24dp_E8EAED.png" alt="icon da senha" class="icon2">
-                    <form>
-                        <input type="text" name="login" class="usuario" placeholder="digite seu usuário">
-                        <input type="password" name="Senha" class="senha" placeholder="digite sua senha">
-                        <button class="button">Entrar</button>
-                    </form>
-                </div>
+            <div class="login">
+                
+                <img src="imagens/perm_identity_24dp_E8EAED.png" alt="icone de senha" class="icon1">
+                <img src="imagens/lock_open_24dp_E8EAED.png" alt="icon de cadeado" class="icon2">
+                
+                <form onsubmit="return validarFormulario()" class="form">
+                    <input type="email" id="email" name="email" placeholder="Digite seu usuário" class="usuario" required>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" class="senha" required>
+                    <button type="submit">Entrar</button>
+                </form>
 
-            <p>Problemas para entrar</p>
-            <a href="">Clique aqui</a>
+                <p>Ainda não tem cadastro?</p>
+                <a href="">Clique aqui</a>
+
+            </div> <!--div do lado esquerdo-->
+        </div>
+
+        <div class="hero">
+            <img src="imagens/undraw_interview_rmcf 1.png" alt="">
+        </div>
+
+        <div class="right-side"> <!--Div do lado direito-->
 
         </div>
-        <div class="team">
-            <img src="imagens/undraw_interview_rmcf.svg" alt="team">
 
-        </div>
     </div>
 
-
+    <script src="script.js"></script>
+    
 </body>
 </html>
