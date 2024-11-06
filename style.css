@@ -262,6 +262,25 @@ a{
         left: 55px;
     }
 
+    p{
+        color: white;
+        text-align: center;
+        position: absolute;
+        top: 600px;
+        left: 140px;
+        font-size: 14px;
+    
+    }
+    
+    a{
+        color: white;
+        text-align: center;
+        position: absolute;
+        top: 640px;
+        left: 140px;
+        font-size: 14px;
+    }
+
     .right-side{
         display: none;
     }
