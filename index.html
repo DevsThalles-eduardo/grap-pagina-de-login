@@ -18,8 +18,8 @@
                 <img src="imagens/lock_open_24dp_E8EAED.png" alt="icon de cadeado" class="icon2">
                 
                 <form onsubmit="return validarFormulario()" class="form">
-                    <input type="email" id="email" name="email" placeholder="Digite seu usuário" class="usuario" required>
-                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" class="senha" required>
+                    <input type="email" id="email" name="email" placeholder="Digite seu usuário" class="usuario" required  autocomplete="email">
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" class="senha" required autocomplete="current-password">
                     <button type="submit">Entrar</button>
                 </form>
 
@@ -39,7 +39,9 @@
 
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js">
+        
+    </script>
     
 </body>
 </html>
